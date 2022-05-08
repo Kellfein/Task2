@@ -58,6 +58,7 @@ namespace Task2
                 if (n % x == 0)
                 {
                     chek = true;
+                    break;
                 }
             }
             if (chek == true)
