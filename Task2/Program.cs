@@ -28,7 +28,7 @@ namespace Task2
             {
                 iteration++;
                 Console.WriteLine($"Введите значение {iteration}-й карты ");
-                cardValue = Console.ReadLine();
+                cardValue = Console.ReadLine().Trim().ToUpper();
                 switch (cardValue)
                 {
                     case "J":
@@ -50,8 +50,9 @@ namespace Task2
             Console.WriteLine(" Введите целое число ");
             int n = int.Parse(Console.ReadLine());
             int x = 1;
+            int y = Convert.ToInt32(Math.Sqrt(n));
             bool chek = false;
-            while (x < n - 1)
+            while (x < y)
             {
                 x++;
                 if (n % x == 0)
